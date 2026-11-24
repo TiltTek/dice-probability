@@ -4,6 +4,15 @@ All notable changes to `tilttek/dice-probability` will be documented in this fil
 
 Updates should follow the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## 0.1.5-alpha - 2026-11-24
+
+### Changed
+
+- The tests count the processor time of the costliest expressions, and of the greatest common divisor of large
+  numbers, in runs of a reference loop timed beside them, rather than in seconds: a busy machine slows both and no
+  longer fails the bounds, while a computation past its limits still does.
+- `tilttek/dice` 0.3 required: 0.2 is no longer accepted.
+
 ## 0.1.4-alpha - 2026-11-20
 
 ### Changed
